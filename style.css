@@ -8,10 +8,11 @@ body, html {
 .clickablediv 
 {
     border: 1px solid black; 
-    width: 4vw; 
-    height: 4vw;
+    width: 80px; 
+    height: 80px;
     cursor: pointer;
-    margin-right: 1vw;
+    margin-right: 25px;
+    
 }
 
 
@@ -19,24 +20,24 @@ body, html {
 {
     display: flex;
     position: relative;
-    left: 50vw;
-    top: 2vw;
+    left: 380px;
+    top: 90px;
 }
 
 .line2
 {
     display: flex;
     position: relative;
-    left: 45vw; 
-    top: 6vw;
+    left: 380px; 
+    top: 190px;
     
 }
 .line3
 {
     display: flex;
     position: relative;
-    left: 40vw; 
-    top: 10vw;
+    left: 380px; 
+    top: 290px;
 }
 
 svg {
@@ -57,12 +58,20 @@ polygon {
 .trianglediv
 {
     pointer-events: none; 
-    width: 100px;
-    height: 100px;
-    /* transform-origin: 50% 57.74%; */
+    width: 200px;
+    height: 200px;
     transform: rotate(0deg);
     position: relative;
+    top: -200px;
+}
 
+.trianglediv-skaparen
+{
+    width: 200px;
+    height: 200px;
+    transform: rotate(0deg);
+    position: relative;
+    top: -200px;
 
 }
 
@@ -80,7 +89,153 @@ polygon {
     display: inline-block;
     cursor: pointer;
     position: relative;
-    left: 40px;
-    top: -60px;
+    left: 90px;
+    bottom: 80.52px;
 
+}
+
+
+
+.textbox1 
+{
+    position: relative;
+    text-align: center;
+    bottom: 60px;
+    font-size: 14px;
+
+}
+
+.textbox2
+{
+    position: relative;
+    bottom: 160px;
+    transform: rotate(120deg);
+    left: -40px;
+    font-size: 14px;
+    text-align: center;
+    
+}
+
+.textbox3
+{
+    position: relative;
+    text-align: center;
+    bottom: 189px;
+    font-size: 14px;
+    transform: rotate(-120deg);
+    left: 40px;
+}
+
+
+.code1
+{
+    position: relative;
+    text-align: center;
+    bottom: 153px;
+    left: 75px;
+    transform: rotate(-60deg);
+    font-size: x-large;
+}
+
+.code2
+{
+    position: relative;
+    bottom: 195px;
+    transform: rotate(60deg);
+    left: -77px;
+    font-size: x-large;
+    text-align: center;
+}
+
+.code3
+{
+    position: relative;
+    text-align: center;
+    bottom: 380px;
+    font-size: x-large;
+    transform: rotate(180deg);
+    left: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.skaparn-textbox1 
+{
+    position: relative;
+    text-align: center;
+    bottom: 30px;
+    left: 45px;
+    font-size: 14px; 
+    width: 100px;
+
+
+
+}
+
+.skaparn-textbox2
+{
+    position: relative;
+    bottom: 120px;
+    transform: rotate(120deg);
+    left: 6px;
+    font-size: 14px;
+    text-align: center;
+    width: 100px;
+
+    
+}
+
+.skaparn-textbox3
+{
+    position: relative;
+    text-align: center;
+    bottom: 149px;
+    font-size: 14px;
+    transform: rotate(-120deg);
+    left: 85px;
+    width: 100px;
+
+}
+
+
+.skaparn-code1
+{
+    position: relative;
+    text-align: center;
+    bottom: 82px;
+    left: 50px;
+    transform: rotate(-60deg);
+    font-size: x-large;
+    width: 25px;
+}
+
+.skaparn-code2
+{
+    position: relative;
+    bottom: 82px;
+    transform: rotate(60deg);
+    left: -144px;
+    font-size: x-large;
+    text-align: center;
+    width: 25px;
+}
+
+.skaparn-code3
+{
+    position: relative;
+    text-align: center;
+    bottom: 252px;
+    font-size: x-large;
+    transform: rotate(180deg);
+    left: 83px;
+    width: 25px;
 }

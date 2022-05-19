@@ -38,6 +38,10 @@ function selectTriangle(triangleNumber)
     }
 }
 
+
+
+
+
 function movetriangle(selectedTriangle, divNumber)
 {
     let triangleChosen = document.getElementById("triangle" + selectedTriangle);
@@ -50,14 +54,15 @@ function movetriangle(selectedTriangle, divNumber)
 
 
     // let centererX = triangleChosen.style.
-    let centererX = 25 
-    let centererY = 33.33
+    let centererX = 60
+    let centererY = 80
 
 
     let divChosen = document.getElementById("div" + divNumber);
     let rect = divChosen.getBoundingClientRect()
 
     triangleChosen.style.position = "absolute"    
+    // triangleChosen.style.transformOrigin = "50% 50%;"
     triangleChosen.style.left = rect.left - centererX + "px";
     triangleChosen.style.top = rect.top - centererY + "px";
 
@@ -67,6 +72,10 @@ function movetriangle(selectedTriangle, divNumber)
 
 
 }
+
+
+
+
 
 
 let angleTriangle1 = 0
@@ -139,7 +148,7 @@ function rotateTriangle(selectedTriangle)
      if(rotatedSteps == 0)
      {        
         divtriangle.style.transformOrigin = "50% 57.74%";
-        divtriangle.style.top = parseInt(divtriangle.style.top.split("px")[0]) - 30 + "px"
+        divtriangle.style.top = parseInt(divtriangle.style.top.split("px")[0]) - 60 + "px"
         divtriangle.style.transform = "rotate(" + (rotatedSteps + 1) * 60 + "deg)"
      }
 
@@ -147,14 +156,15 @@ function rotateTriangle(selectedTriangle)
      if(rotatedSteps == 1)
      {
         divtriangle.style.transformOrigin = "50% 57.74%";
-        divtriangle.style.top = parseInt(divtriangle.style.top.split("px")[0]) + 30 + "px"
+        divtriangle.style.top = parseInt(divtriangle.style.top.split("px")[0]) + 60 + "px"
         divtriangle.style.transform = "rotate(" + (rotatedSteps + 1) * 60 + "deg)"
      }
 
 
      if(rotatedSteps == 2)
      {
-        tri.style.marginTop = "13.39746px";
+        tri.style.marginTop = "26.79492px";
+        divtriangle.style.top = parseInt(divtriangle.style.top.split("px")[0]) + 0 + "px"
         divtriangle.style.transform = "rotate(" + (rotatedSteps + 1) * 60 + "deg)"
      }
 
@@ -170,7 +180,7 @@ function rotateTriangle(selectedTriangle)
      if (rotatedSteps == 4)
      {
         divtriangle.style.transformOrigin = "50% 57.74%";
-        divtriangle.style.top = parseInt(divtriangle.style.top.split("px")[0]) - 30 + "px"
+        divtriangle.style.top = parseInt(divtriangle.style.top.split("px")[0]) - 60 + "px"
         divtriangle.style.transform = "rotate(" + (rotatedSteps + 1) * 60 + "deg)"
 
      }
@@ -178,7 +188,7 @@ function rotateTriangle(selectedTriangle)
 
      if (rotatedSteps == 5)
      {
-        divtriangle.style.top = parseInt(divtriangle.style.top.split("px")[0]) + 30 + "px"
+        divtriangle.style.top = parseInt(divtriangle.style.top.split("px")[0]) + 60 + "px"
         divtriangle.style.transform = "rotate(" + (rotatedSteps + 1) * 60 + "deg)"
         divtriangle.setAttribute("data-rotated-steps", rotatedSteps - 5)
      }
