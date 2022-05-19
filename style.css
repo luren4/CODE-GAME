@@ -11,6 +11,7 @@ body, html {
     width: 4vw; 
     height: 4vw;
     cursor: pointer;
+    margin-right: 1vw;
 }
 
 
@@ -18,7 +19,7 @@ body, html {
 {
     display: flex;
     position: relative;
-    left: 48vw;
+    left: 50vw;
     top: 2vw;
 }
 
@@ -26,8 +27,9 @@ body, html {
 {
     display: flex;
     position: relative;
-    left: 44vw; 
+    left: 45vw; 
     top: 6vw;
+    
 }
 .line3
 {
@@ -37,27 +39,38 @@ body, html {
     top: 10vw;
 }
 
-.triangle-up {
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 100px solid #555;
-    cursor: pointer;
+svg {
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
 }
 
-.triangle-down {
-	width: 0;
-	height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-top: 100px solid #555;
-    cursor: pointer;
+polygon {
+    pointer-events: fill;
+    right: 100px;
 }
+
+#output {
+  margin-top: 120px;
+}
+
+.trianglediv
+{
+    pointer-events: none; 
+    width: 100px;
+    height: 100px;
+    /* transform-origin: 50% 57.74%; */
+    transform: rotate(0deg);
+    position: relative;
+
+
+}
+
 
 
 .btn 
 {
+    pointer-events: all;
     background-color: #4CAF50;
     border: none;
     color: white;
@@ -67,7 +80,7 @@ body, html {
     display: inline-block;
     cursor: pointer;
     position: relative;
-    left: -10px;
-    top: 45px;
+    left: 40px;
+    top: -60px;
 
 }
