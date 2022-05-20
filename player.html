@@ -1,127 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="line1">
-        <div class="clickablediv div1" id="div1" onclick="clickeddiv1(1)">hej</div>
-        <div class="clickablediv div2" id="div2" onclick="clickeddiv1(2)">hej</div>
-        <div class="clickablediv div3" id="div3" onclick="clickeddiv1(3)">hej</div>
-        <div class="clickablediv div4" id="div4" onclick="clickeddiv1(4)">hej</div>
-        <div class="clickablediv div5" id="div5" onclick="clickeddiv1(5)">hej</div>
+      <div class="clickablediv div1" id="div1" onclick="clickeddiv1(1)"></div>
+      <div class="clickablediv div2" id="div2" onclick="clickeddiv1(2)"></div>
+      <div class="clickablediv div3" id="div3" onclick="clickeddiv1(3)"></div>
+      <div class="clickablediv div4" id="div4" onclick="clickeddiv1(4)"></div>
+      <div class="clickablediv div5" id="div5" onclick="clickeddiv1(5)"></div>
     </div>
 
     <div class="line2">
-        <div class="clickablediv div3" id="div6" onclick="clickeddiv1(6)">hej</div>
-        <div class="clickablediv div5" id="div7" onclick="clickeddiv1(7)">hej</div>
-        <div class="clickablediv div5" id="div8" onclick="clickeddiv1(8)">hej</div>
-        <div class="clickablediv div5" id="div9" onclick="clickeddiv1(9)">hej</div>
-        <div class="clickablediv div5" id="div10" onclick="clickeddiv1(10)">hej</div>
-
-
+      <div class="clickablediv div3" id="div6" onclick="clickeddiv1(6)"></div>
+      <div class="clickablediv div5" id="div7" onclick="clickeddiv1(7)"></div>
+      <div class="clickablediv div5" id="div8" onclick="clickeddiv1(8)"></div>
+      <div class="clickablediv div5" id="div9" onclick="clickeddiv1(9)"></div>
+      <div class="clickablediv div5" id="div10" onclick="clickeddiv1(10)"></div>
     </div>
 
     <div class="line3">
-        <div class="clickablediv div5" id="div11" onclick="clickeddiv1(11)">hej</div>
-        <div class="clickablediv div5" id="div12" onclick="clickeddiv1(12)">hej</div>
-        <div class="clickablediv div6" id="div13" onclick="clickeddiv1(13)">hej</div>
-        <div class="clickablediv div7" id="div14" onclick="clickeddiv1(14)">hej</div>
-        <div class="clickablediv div8" id="div15" onclick="clickeddiv1(15)">hej</div>
-
+      <div class="clickablediv div5" id="div11" onclick="clickeddiv1(11)"></div>
+      <div class="clickablediv div5" id="div12" onclick="clickeddiv1(12)"></div>
+      <div class="clickablediv div6" id="div13" onclick="clickeddiv1(13)"></div>
+      <div class="clickablediv div7" id="div14" onclick="clickeddiv1(14)"></div>
+      <div class="clickablediv div8" id="div15" onclick="clickeddiv1(15)"></div>
     </div>
 
+    <div id="triangle1" data-rotated-steps="0" class="trianglediv">
+      <svg width="200px" height="173.20508px" id="triup1">
+        <polygon
+          points="0, 173.20508, 100, 0, 200, 173.20508"
+          fill="red"
+          onclick="selectTriangle(1)"
+        />
+      </svg>
+      <button class="rotatebutton btn" onclick="rotateTriangle(1)"></button>
+      <h1 class="textbox1"><span id="Tri1-textbox1"></span></h1>
+      <h1 class="textbox2"><span id="Tri1-textbox2"></span></h1>
+      <h1 class="textbox3"><span id="Tri1-textbox3"></span></h1>
+      <h1 class="code1"><span id="Tri1-code1"></span></h1>
+      <h1 class="code2"><span id="Tri1-code2"></span></h1>
+      <h1 class="code3"><span id="Tri1-code3"></span></h1>
+    </div>
 
+    <div id="triangle2" data-rotated-steps="0" class="trianglediv">
+      <svg width="200px" height="173.20508px" id="triup2">
+        <polygon
+          points="0,  173.20508, 100, 0, 200, 173.20508"
+          fill="red"
+          onclick="selectTriangle(2)"
+        />
+      </svg>
+      <button class="rotatebutton btn" onclick="rotateTriangle(2)"></button>
+      <h1 class="textbox1"><span id="Tri2-textbox1"></span></h1>
+      <h1 class="textbox2"><span id="Tri2-textbox2"></span></h1>
+      <h1 class="textbox3"><span id="Tri2-textbox3"></span></h1>
+      <h1 class="code1"><span id="Tri2-code1"></span></h1>
+      <h1 class="code2"><span id="Tri2-code2"></span></h1>
+      <h1 class="code3"><span id="Tri2-code3"></span></h1>
+    </div>
 
-<div id="triangle1" data-rotated-steps="0" class="trianglediv">
-    <!-- <div style="height: 13.39746px;"></div> -->
-    <svg width="200px" height="173.20508px" id="triup1">
-        <polygon points="0, 173.20508, 100, 0, 200, 173.20508" fill="red" onclick="selectTriangle(1)"/>
-    </svg>
-    <button class="rotatebutton btn" onclick="rotateTriangle(1)"></button>
-    <h1 class="textbox1">Biologisk mångfald</h1>
-    <h1 class="textbox2">Biologiskt uttryck</h1>
-    <h1 class="textbox3">Darwins teori</h1>
-    <h1 class="code1">A</h1>
-    <h1 class="code2">B</h1>
-    <h1 class="code3">C</h1>
-</div>
+    <div id="triangle3" data-rotated-steps="0" class="trianglediv">
+      <svg width="200px" height="173.20508px" id="triup3">
+        <polygon
+          points="0, 173.20508, 100, 0, 200, 173.20508"
+          fill="red"
+          onclick="selectTriangle(3)"
+        />
+      </svg>
+      <button class="rotatebutton btn" onclick="rotateTriangle(3)"></button>
+      <h1 class="textbox1"><span id="Tri3-textbox1"></span></h1>
+      <h1 class="textbox2"><span id="Tri3-textbox2"></span></h1>
+      <h1 class="textbox3"><span id="Tri3-textbox3"></span></h1>
+      <h1 class="code1"><span id="Tri3-code1"></span></h1>
+      <h1 class="code2"><span id="Tri3-code2"></span></h1>
+      <h1 class="code3"><span id="Tri3-code3"></span></h1>
+    </div>
 
+    <div id="triangle4" data-rotated-steps="0" class="trianglediv">
+      <svg width="200px" height="173.20508px" id="triup4">
+        <polygon
+          points="0, 173.20508, 100, 0, 200, 173.20508"
+          fill="red"
+          onclick="selectTriangle(4)"
+        />
+      </svg>
+      <button class="rotatebutton btn" onclick="rotateTriangle(4)"></button>
+      <h1 class="textbox1"><span id="Tri4-textbox1"></span></h1>
+      <h1 class="textbox2"><span id="Tri4-textbox2"></span></h1>
+      <h1 class="textbox3"><span id="Tri4-textbox3"></span></h1>
+      <h1 class="code1"><span id="Tri4-code1"></span></h1>
+      <h1 class="code2"><span id="Tri4-code2"></span></h1>
+      <h1 class="code3"><span id="Tri4-code3"></span></h1>
+    </div>
 
-<div id="triangle2" data-rotated-steps="0" class="trianglediv">
-    <!-- <div style="height: 13.39746px;"></div> -->
-    <svg width="200px" height="173.20508px" id="triup2">
-        <polygon points="0,  173.20508, 100, 0, 200, 173.20508" fill="red" onclick="selectTriangle(2)"/>
-    </svg>
-    <button class="rotatebutton btn" onclick="rotateTriangle(2)"></button>
-</div>
+    <div id="triangle5" data-rotated-steps="0" class="trianglediv">
+      <svg width="200px" height="173.20508px" id="triup5">
+        <polygon
+          points="0, 173.20508, 100, 0, 200, 173.20508"
+          fill="red"
+          onclick="selectTriangle(5)"
+        />
+      </svg>
+      <button class="rotatebutton btn" onclick="rotateTriangle(5)"></button>
+      <h1 class="textbox1"><span id="Tri5-textbox1"></span></h1>
+      <h1 class="textbox2"><span id="Tri5-textbox2"></span></h1>
+      <h1 class="textbox3"><span id="Tri5-textbox3"></span></h1>
+      <h1 class="code1"><span id="Tri5-code1"></span></h1>
+      <h1 class="code2"><span id="Tri5-code2"></span></h1>
+      <h1 class="code3"><span id="Tri5-code3"></span></h1>
+    </div>
 
+    <div id="triangle6" data-rotated-steps="0" class="trianglediv">
+      <svg width="200px" height="173.20508px" id="triup6">
+        <polygon
+          points="0, 173.20508, 100, 0, 200, 173.20508"
+          fill="red"
+          onclick="selectTriangle(6)"
+        />
+      </svg>
+      <button class="rotatebutton btn" onclick="rotateTriangle(6)"></button>
+      <h1 class="textbox1"><span id="Tri6-textbox1"></span></h1>
+      <h1 class="textbox2"><span id="Tri6-textbox2"></span></h1>
+      <h1 class="textbox3"><span id="Tri6-textbox3"></span></h1>
+      <h1 class="code1"><span id="Tri6-code1"></span></h1>
+      <h1 class="code2"><span id="Tri6-code2"></span></h1>
+      <h1 class="code3"><span id="Tri6-code3"></span></h1>
+    </div>
 
-<div id="triangle3" data-rotated-steps="0" class="trianglediv">
-    <!-- <div style="height: 13.39746px;"></div> -->
-    <svg width="200px" height="173.20508px" id="triup3">
-        <polygon points="0, 173.20508, 100, 0, 200, 173.20508" fill="red" onclick="selectTriangle(3)"/>
-    </svg>
-    <button class="rotatebutton btn" onclick="rotateTriangle(3)"></button>
-</div>
+    <div id="triangle7" data-rotated-steps="0" class="trianglediv">
+      <svg width="200px" height="173.20508px" id="triup7">
+        <polygon
+          points="0, 173.20508, 100, 0, 200, 173.20508"
+          fill="red"
+          onclick="selectTriangle(7)"
+        />
+      </svg>
+      <button class="rotatebutton btn" onclick="rotateTriangle(7)"></button>
+      <h1 class="textbox1"><span id="Tri7-textbox1"></span></h1>
+      <h1 class="textbox2"><span id="Tri7-textbox2"></span></h1>
+      <h1 class="textbox3"><span id="Tri7-textbox3"></span></h1>
+      <h1 class="code1"><span id="Tri7-code1"></span></h1>
+      <h1 class="code2"><span id="Tri7-code2"></span></h1>
+      <h1 class="code3"><span id="Tri7-code3"></span></h1>
+    </div>
 
-<div id="triangle4" data-rotated-steps="0" class="trianglediv">
-    <!-- <div style="height: 13.39746px;"></div> -->
-    <svg width="200px" height="173.20508px" id="triup4">
-        <polygon points="0, 173.20508, 100, 0, 200, 173.20508" fill="red" onclick="selectTriangle(4)"/>
-    </svg>
-    <button class="rotatebutton btn" onclick="rotateTriangle(4)"></button>
-</div>
+    <div id="triangle8" data-rotated-steps="0" class="trianglediv">
+      <svg width="200px" height="173.20508px" id="triup8">
+        <polygon
+          points="0, 173.20508, 100, 0, 200, 173.20508"
+          fill="red"
+          onclick="selectTriangle(8)"
+        />
+      </svg>
+      <button class="rotatebutton btn" onclick="rotateTriangle(8)"></button>
+      <h1 class="textbox1"><span id="Tri8-textbox1"></span></h1>
+      <h1 class="textbox2"><span id="Tri8-textbox2"></span></h1>
+      <h1 class="textbox3"><span id="Tri8-textbox3"></span></h1>
+      <h1 class="code1"><span id="Tri8-code1"></span></h1>
+      <h1 class="code2"><span id="Tri8-code2"></span></h1>
+      <h1 class="code3"><span id="Tri8-code3"></span></h1>
+    </div>
 
-<div id="triangle5" data-rotated-steps="0" class="trianglediv">
-    <!-- <div style="height: 13.39746px;"></div> -->
-    <svg width="200px" height="173.20508px" id="triup5">
-        <polygon points="0, 173.20508, 100, 0, 200, 173.20508" fill="red" onclick="selectTriangle(5)"/>
-    </svg>
-    <button class="rotatebutton btn" onclick="rotateTriangle(5)"></button>
-</div>
-
-<div id="triangle6" data-rotated-steps="0" class="trianglediv">
-    <!-- <div style="height: 13.39746px;"></div> -->
-    <svg width="200px" height="173.20508px" id="triup6">
-        <polygon points="0, 173.20508, 100, 0, 200, 173.20508" fill="red" onclick="selectTriangle(6)"/>
-    </svg>
-    <button class="rotatebutton btn" onclick="rotateTriangle(6)"></button>
-</div>
-
-<div id="triangle7" data-rotated-steps="0" class="trianglediv">
-    <!-- <div style="height: 13.39746px;"></div> -->
-    <svg width="200px" height="173.20508px" id="triup7">
-        <polygon points="0, 173.20508, 100, 0, 200, 173.20508" fill="red" onclick="selectTriangle(7)"/>
-    </svg>
-    <button class="rotatebutton btn" onclick="rotateTriangle(7)"></button>
-</div>
-
-<div id="triangle8" data-rotated-steps="0" class="trianglediv">
-    <!-- <div style="height: 13.39746px;"></div> -->
-    <svg width="200px" height="173.20508px" id="triup8">
-        <polygon points="0, 173.20508, 100, 0, 200, 173.20508" fill="red" onclick="selectTriangle(8)"/>
-    </svg>
-    <button class="rotatebutton btn" onclick="rotateTriangle(8)"></button>
-</div>
-
-<div id="triangle9" data-rotated-steps="0" class="trianglediv">
-    <!-- <div style="height: 13.39746px;"></div> -->
-    <svg width="200px" height="173.20508px" id="triup9">
-        <polygon points="0, 173.20508, 100, 0, 200, 173.20508" fill="red" onclick="selectTriangle(9)"/>
-    </svg>
-    <button class="rotatebutton btn" onclick="rotateTriangle(9)"></button>
-</div>
-
-
-
+    <div id="triangle9" data-rotated-steps="0" class="trianglediv">
+      <svg width="200px" height="173.20508px" id="triup9">
+        <polygon
+          points="0, 173.20508, 100, 0, 200, 173.20508"
+          fill="red"
+          onclick="selectTriangle(9)"
+        />
+      </svg>
+      <button class="rotatebutton btn" onclick="rotateTriangle(9)"></button>
+      <h1 class="textbox1"><span id="Tri9-textbox1"></span></h1>
+      <h1 class="textbox2"><span id="Tri9-textbox2"></span></h1>
+      <h1 class="textbox3"><span id="Tri9-textbox3"></span></h1>
+      <h1 class="code1"><span id="Tri9-code1"></span></h1>
+      <h1 class="code2"><span id="Tri9-code2"></span></h1>
+      <h1 class="code3"><span id="Tri9-code3"></span></h1>
+    </div>
 
     <script src="coding.js"></script>
 
-</body>
+    <script>
+      function getParameter(parameterName) {
+        let parameters = new URLSearchParams(window.location.search);
+        return parameters.get(parameterName);
+      }
+
+      for (i = 1; i < 10; i++) {
+        for (z = 1; z < 4; z++) {
+          document.getElementById(`Tri${i}-textbox${z}`).innerHTML =
+            getParameter(`Triangle${i}-Statement${z}`);
+          console.log(
+            `Tri${i}-textbox${z}` + "    " + `Triangle${i}-Statement${z}`
+          );
+        }
+
+        for (n = 1; n < 4; n++) {
+          document.getElementById(`Tri${i}-code${n}`).innerHTML = getParameter(
+            `Triangle${i}-code${n}`
+          );
+        }
+        console.log(i);
+      }
+    </script>
+  </body>
 </html>

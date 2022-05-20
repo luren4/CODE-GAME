@@ -65,16 +65,6 @@ polygon {
     top: -200px;
 }
 
-.trianglediv-skaparen
-{
-    width: 200px;
-    height: 200px;
-    transform: rotate(0deg);
-    position: relative;
-    top: -200px;
-
-}
-
 
 
 .btn 
@@ -238,4 +228,50 @@ polygon {
     transform: rotate(180deg);
     left: 83px;
     width: 25px;
+}
+
+
+
+.trianglediv-skaparen
+{
+    width: 200px;
+    height: 200px;
+    transform: rotate(0deg);
+    position: relative;
+    top: -100px;
+    left: 100px;
+
+}
+
+.trianglediv-down-skaparen
+{
+    width: 200px;
+    height: 200px;
+    transform: rotate(60deg);
+    position: relative;
+    top: -150px;
+    left: 113px;
+}
+
+
+
+
+.emptydiv
+{
+    width: 200px;
+    height: 200px;
+}
+
+.skaparn-line1
+{
+    top: 500px;
+    display: flex;
+}
+.skaparn-line2
+{
+    display: flex;
+}
+.skaparn-line3
+{
+    display: flex;
 }

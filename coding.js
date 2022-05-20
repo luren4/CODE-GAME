@@ -20,8 +20,14 @@ function selectTriangle(triangleNumber)
     console.log("Clicked Triangle" + triangleNumber)
 
     let triangleChosen = document.getElementById("triangle" + triangleNumber);
+    // let svg = document.getElementById("triup" + triangleNumber);
+    // let svgfill = svg.getAttribute("fill")
     
     console.log(triangleChosen)
+
+    // svgfill = "blue"
+    // console.log(svgfill)
+
 
 
     if(triangleNumber == selectedTriangle)
@@ -45,14 +51,12 @@ function selectTriangle(triangleNumber)
 function movetriangle(selectedTriangle, divNumber)
 {
     let triangleChosen = document.getElementById("triangle" + selectedTriangle);
+    let tri = document.getElementById("triup" + selectedTriangle);
 
     console.log(triangleChosen)
 
     rotateBack(selectedTriangle)
-
-
-
-
+   
     // let centererX = triangleChosen.style.
     let centererX = 60
     let centererY = 80
@@ -61,6 +65,7 @@ function movetriangle(selectedTriangle, divNumber)
     let divChosen = document.getElementById("div" + divNumber);
     let rect = divChosen.getBoundingClientRect()
 
+    tri.style.marginTop = "0px"
     triangleChosen.style.position = "absolute"    
     // triangleChosen.style.transformOrigin = "50% 50%;"
     triangleChosen.style.left = rect.left - centererX + "px";
@@ -124,7 +129,7 @@ function rotateTriangle(selectedTriangle)
 
 
     console.log(divtriangle.style.transformOrigin)
-    
+    tri.style.marginTop = "0px";
 
 
 
@@ -193,119 +198,4 @@ function rotateTriangle(selectedTriangle)
         divtriangle.setAttribute("data-rotated-steps", rotatedSteps - 5)
      }
 
-
-
-
-
-
-
-
-    // let rect = triangleChosen.getBoundingClientRect()
-    // console.log(rect.x)
-    // console.log(rect.y)
-
-
-    // triangleChosen.style.x = rect.x + "px";
-    // triangleChosen.style.y = rect.y + "px";
-
-
-    //     // NEJNEJNEJ!!! GÖR BARA SÅ ATT TRIANGLARNAS DIVVAR MED TEXT BYTER PLATS INTE ATT TRIANGELN ROTERAR!!!!
-
-
-
-    
-    // let styleForTriangle = window.getComputedStyle(triangleChosen);
-
-    // let tr = styleForTriangle.getPropertyValue("transform") // THE MATRIX
-
-    // var values = tr.split('(')[1];
-    // values = values.split(')')[0];
-    // values = values.split(',');
-    // var a = values[0];
-    // var b = values[1];
-    // var c = values[2];
-    // var d = values[3];
-
-    // var scale = Math.sqrt(a*a + b*b);
-
-    // // arc sin, convert from radians to degrees, round
-    // // DO NOT USE: see update below
-    // var sin = b/scale;
-    // // var angle = Math.round(Math.asin(sin) * (180/Math.PI));
-    // var angle = Math.round(Math.atan2(b, a) * (180/Math.PI));
-
-
-
-    // // works!
-    // // console.log('First rotation: ' + angle + 'deg');
-    // // console.log(styleForTriangle.getPropertyValue("transform"))
-
-    // angle = angle + 60
-
-    // triangleChosen.style.position = "absolute"    
-    // triangleChosen.style.transform = "rotate(" + angle + "deg)"
-
-    // console.log(styleForTriangle.getPropertyValue("transform"))
-    // console.log('Got rotated to: ' + angle + 'deg');
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-    // let triangleChosen = document.getElementById("triangle" + selectedTriangle);
-
-
-
-
-    // triangleChosen.style.position = "absolute"    
-    // triangleChosen.style.transform = "rotate(" + (angleTriangle1 + 60) + "deg)"
-
-
-    // angle = "angletriangle" + selectedTriangle
-
-    // angleTriangle1 + 60
-
-
-
-
-
-
-
-
-    // styleForTriangle.getPropertyValue("transform") = matrix(0.5, 0.866025, -0.866025, 0.5, 0, 0)
-
-    // transform: matrix(0.5, 0.866025, -0.866025, 0.5, 0, 0);
-
-
-
-
-    // console.log(window.getComputedStyle(triangleChosen, rotate))
-
-
-    // let compStyles = window.getComputedStyle(para);
-    // para.textContent = 'My computed font-size is ' +
-    //     compStyles.getPropertyValue('font-size') +
-    //     ',\nand my computed line-height is ' +
-    //     compStyles.getPropertyValue('line-height') +
-    //     '.';
-
-
-
-
-
-
-    // triangleChosen.style.transform = "rotate(" + 60 + "deg)"
 }
